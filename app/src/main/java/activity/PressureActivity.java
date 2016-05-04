@@ -3,7 +3,6 @@ package activity;
 
 
 import com.hitek.serial.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.drawable.BitmapDrawable;
@@ -18,7 +17,6 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.PopupWindow;
 import android.widget.TextView;
-
 import utils.Constants;
 import utils.PopUtils;
 
@@ -74,14 +72,12 @@ public class PressureActivity extends Activity implements View.OnClickListener {
         pressure_et_max2 = (TextView)findViewById(R.id.pressure_et_max2);
         pressure_et_min1 = (TextView)findViewById(R.id.pressure_et_min1);
         pressure_et_min2 = (TextView)findViewById(R.id.pressure_et_min2);
+        pressure_btn_back = (Button) findViewById(R.id.pressure_btn_back);
         pressure_et_max1.setOnClickListener(this);
         pressure_et_max2.setOnClickListener(this);
         pressure_et_min1.setOnClickListener(this);
         pressure_et_min2.setOnClickListener(this);
-        pressure_btn_back = (Button) findViewById(R.id.pressure_btn_back);
         pressure_btn_back.setOnClickListener(this);
-
-
     }
     /**数据初始化*/
     public void initData(){

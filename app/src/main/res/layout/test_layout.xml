@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-        android:focusable="true"
+    android:focusable="true"
     android:focusableInTouchMode="true">
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,14 +19,14 @@
                 android:textSize="30sp"
                 android:layout_marginLeft="50dp"/>
             <EditText
-            android:id="@+id/test_et_m_write_address"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="30sp"
-            android:hint="地址"
-            android:inputType="number"
-            android:lines="1"
-            />
+                android:id="@+id/test_et_m_write_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:hint="地址"
+                android:inputType="number"
+                android:lines="1"
+                />
             <EditText
                 android:id="@+id/test_et_m_write_type"
                 android:layout_width="wrap_content"
@@ -34,14 +34,14 @@
                 android:textSize="30sp"
                 android:layout_marginLeft="20dp"
                 android:hint="类型"
-              android:inputType="number"
-            android:lines="1"
+                android:inputType="number"
+                android:lines="1"
                 />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
-                android:layout_marginLeft="130dp"
+                android:layout_marginLeft="180dp"
                 android:text="位元件读出(M)："
                 />
             <EditText
@@ -50,8 +50,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
                 android:hint="地址"
-              android:inputType="number"
-            android:lines="1"
+                android:inputType="number"
+                android:lines="1"
                 />
             <EditText
                 android:id="@+id/test_et_m_read_type"
@@ -60,8 +60,8 @@
                 android:textSize="30sp"
                 android:layout_marginLeft="20dp"
                 android:hint="类型"
-              android:inputType="number"
-            android:lines="1"
+                android:inputType="number"
+                android:lines="1"
                 />
         </LinearLayout>
         <LinearLayout
@@ -80,8 +80,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
                 android:hint="请输入地址"
-             android:inputType="number"
-            android:lines="1"
+                android:inputType="number"
+                android:lines="1"
                 />
             <Button
                 android:id="@+id/test_btn_m_write"
@@ -130,8 +130,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
                 android:hint="地址"
-            android:inputType="number"
-            android:lines="1"
+                android:inputType="number"
+                android:lines="1"
                 />
             <EditText
                 android:id="@+id/test_et_vw_write_type"
@@ -140,8 +140,8 @@
                 android:textSize="30sp"
                 android:layout_marginLeft="20dp"
                 android:hint="类型"
-               android:inputType="number"
-            android:lines="1"
+                android:inputType="number"
+                android:lines="1"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -156,8 +156,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
                 android:hint="地址"
-            android:inputType="number"
-            android:lines="1"
+                android:inputType="number"
+                android:lines="1"
                 />
             <EditText
                 android:id="@+id/test_et_vw_read_type"
@@ -166,8 +166,8 @@
                 android:textSize="30sp"
                 android:layout_marginLeft="20dp"
                 android:hint="类型"
-             android:inputType="number"
-            android:lines="1"
+                android:inputType="number"
+                android:lines="1"
                 />
         </LinearLayout>
         <LinearLayout
@@ -186,9 +186,9 @@
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
                 android:hint="请输入地址"
-                         android:inputType="number"
-            android:lines="1"
-            
+                android:inputType="number"
+                android:lines="1"
+
                 />
             <Button
                 android:id="@+id/test_btn_vw_write"
@@ -237,8 +237,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
                 android:hint="地址"
-            android:inputType="number"
-            android:lines="1"
+                android:inputType="number"
+                android:lines="1"
                 />
             <EditText
                 android:id="@+id/test_et_vd_write_type"
@@ -247,8 +247,8 @@
                 android:textSize="30sp"
                 android:layout_marginLeft="20dp"
                 android:hint="类型"
-            android:inputType="number"
-            android:lines="1"
+                android:inputType="number"
+                android:lines="1"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -263,8 +263,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
                 android:hint="地址"
-             android:inputType="number"
-            android:lines="1"
+                android:inputType="number"
+                android:lines="1"
                 />
             <EditText
                 android:id="@+id/test_et_vd_read_type"
@@ -273,8 +273,8 @@
                 android:textSize="30sp"
                 android:layout_marginLeft="20dp"
                 android:hint="类型"
-              android:inputType="number"
-            android:lines="1"
+                android:inputType="number"
+                android:lines="1"
                 />
         </LinearLayout>
         <LinearLayout
@@ -294,7 +294,7 @@
                 android:textSize="30sp"
                 android:hint="请输入地址"
                 android:inputType="number"
-            android:lines="1"
+                android:lines="1"
                 />
             <Button
                 android:id="@+id/test_btn_vd_write"
@@ -343,8 +343,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
                 android:hint="地址"
-            android:inputType="number"
-            android:lines="1"
+                android:inputType="number"
+                android:lines="1"
                 />
             <EditText
                 android:id="@+id/test_et_f_write_type"
@@ -353,8 +353,8 @@
                 android:textSize="30sp"
                 android:layout_marginLeft="20dp"
                 android:hint="类型"
-           android:inputType="number"
-            android:lines="1"
+                android:inputType="number"
+                android:lines="1"
                 />
             <TextView
                 android:layout_width="wrap_content"
@@ -369,8 +369,8 @@
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
                 android:hint="地址"
-           android:inputType="number"
-            android:lines="1"
+                android:inputType="number"
+                android:lines="1"
                 />
             <EditText
                 android:id="@+id/test_et_f_read_type"
@@ -379,8 +379,8 @@
                 android:textSize="30sp"
                 android:layout_marginLeft="20dp"
                 android:hint="类型"
-            android:inputType="number"
-            android:lines="1"
+                android:inputType="number"
+                android:lines="1"
                 />
         </LinearLayout>
         <LinearLayout
@@ -399,9 +399,9 @@
                 android:layout_height="wrap_content"
                 android:textSize="30sp"
                 android:hint="请输入地址"
-            
-             android:digits="0123456789."
-            android:lines="1"
+
+                android:digits="0123456789."
+                android:lines="1"
                 />
             <Button
                 android:id="@+id/test_btn_f_write"
@@ -427,6 +427,13 @@
                 android:layout_height="wrap_content"
                 android:text="读出"
                 android:layout_marginLeft="10dp"/>
+            <Button
+                android:id="@+id/test_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="离开"
+                android:layout_marginLeft="20dp"/>
+
         </LinearLayout>
 
     </LinearLayout>

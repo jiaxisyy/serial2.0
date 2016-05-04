@@ -112,18 +112,12 @@ public class FlowActivity extends Activity implements View.OnClickListener, View
                 /**这里写数据获取与数据处理函数*/
                 while (flag) {
                     try {
-
                         int[] d264 = MyApplication.getInstance().mdbusreaddword(Constants.Define.OP_DWORD_D, 264, 1);
-                        Bundle bundle = new Bundle();
-                        bundle.putInt("d264", d264[0]);
-                        Message msg = new Message();
-
-
-
                         int[] d272 = MyApplication.getInstance().mdbusreaddword(Constants.Define.OP_DWORD_D, 272, 1);
-
+                        Bundle bundle = new Bundle();
+                        Message msg = new Message();
+                        bundle.putInt("d264", d264[0]);
                         bundle.putInt("d272", d272[0]);
-
                         msg.setData(bundle);
                         msg.what = 1;
                         handler.sendMessage(msg);
@@ -205,8 +199,7 @@ public class FlowActivity extends Activity implements View.OnClickListener, View
 
     private void showPopWindow( final TextView t, final int type, final int stadr) {
         View view = LayoutInflater.from(this).inflate(R.layout.ed_dialog,null);
-        final PopupWindow pw = new PopupWindow(view, ViewGroup.LayoutParams.MATCH_PARENT,
-                ViewGroup.LayoutParams.WRAP_CONTENT,false);
+        final PopupWindow pw = new PopupWindow(view, ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT,false);
         pw.setFocusable(true);
         pw.setOutsideTouchable(true);
         pw.setBackgroundDrawable(new BitmapDrawable());

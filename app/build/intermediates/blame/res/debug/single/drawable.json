@@ -44,12 +44,12 @@
         "source": "D:\\ANDROID1\\serial2.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_dialog_material_background_dark.xml"
     },
     {
-        "merged": "D:\\ANDROID1\\serial2.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\valve_btn_selector.xml",
-        "source": "D:\\ANDROID1\\serial2.0\\app\\src\\main\\res\\drawable\\valve_btn_selector.xml"
-    },
-    {
         "merged": "D:\\ANDROID1\\serial2.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_tab_indicator_material.xml",
         "source": "D:\\ANDROID1\\serial2.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "D:\\ANDROID1\\serial2.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\valve_btn_selector.xml",
+        "source": "D:\\ANDROID1\\serial2.0\\app\\src\\main\\res\\drawable\\valve_btn_selector.xml"
     },
     {
         "merged": "D:\\ANDROID1\\serial2.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_spinner_textfield_background_material.xml",
@@ -72,12 +72,12 @@
         "source": "D:\\ANDROID1\\serial2.0\\app\\src\\main\\res\\drawable\\momitor_btn_bacground_selector.xml"
     },
     {
-        "merged": "D:\\ANDROID1\\serial2.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
-        "source": "D:\\ANDROID1\\serial2.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_ratingbar_full_material.xml"
-    },
-    {
         "merged": "D:\\ANDROID1\\serial2.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\alarm_solid.xml",
         "source": "D:\\ANDROID1\\serial2.0\\app\\src\\main\\res\\drawable\\alarm_solid.xml"
+    },
+    {
+        "merged": "D:\\ANDROID1\\serial2.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ratingbar_full_material.xml",
+        "source": "D:\\ANDROID1\\serial2.0\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.3.0\\res\\drawable\\abc_ratingbar_full_material.xml"
     },
     {
         "merged": "D:\\ANDROID1\\serial2.0\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",

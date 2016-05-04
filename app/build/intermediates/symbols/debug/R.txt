@@ -487,7 +487,7 @@ int id action_menu_presenter 0x7f0c0003
 int id action_mode_bar 0x7f0c003e
 int id action_mode_bar_stub 0x7f0c003d
 int id action_mode_close_button 0x7f0c0023
-int id action_settings 0x7f0c0101
+int id action_settings 0x7f0c0102
 int id activity_chooser_view_content 0x7f0c0024
 int id alarm_btn_back 0x7f0c0062
 int id alarm_et_oxy_concentration 0x7f0c005f
@@ -671,6 +671,7 @@ int id status_btn_back 0x7f0c006f
 int id submit_area 0x7f0c004c
 int id sure 0x7f0c00ae
 int id tabMode 0x7f0c000b
+int id test_back 0x7f0c0101
 int id test_btn_f_read 0x7f0c0100
 int id test_btn_f_write 0x7f0c00fe
 int id test_btn_m_read 0x7f0c00e8

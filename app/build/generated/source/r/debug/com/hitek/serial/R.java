@@ -1650,7 +1650,7 @@ containing a value of this type.
         public static final int action_mode_bar=0x7f0c003e;
         public static final int action_mode_bar_stub=0x7f0c003d;
         public static final int action_mode_close_button=0x7f0c0023;
-        public static final int action_settings=0x7f0c0101;
+        public static final int action_settings=0x7f0c0102;
         public static final int activity_chooser_view_content=0x7f0c0024;
         public static final int alarm_btn_back=0x7f0c0062;
         public static final int alarm_et_oxy_concentration=0x7f0c005f;
@@ -1834,6 +1834,7 @@ containing a value of this type.
         public static final int submit_area=0x7f0c004c;
         public static final int sure=0x7f0c00ae;
         public static final int tabMode=0x7f0c000b;
+        public static final int test_back=0x7f0c0101;
         public static final int test_btn_f_read=0x7f0c0100;
         public static final int test_btn_f_write=0x7f0c00fe;
         public static final int test_btn_m_read=0x7f0c00e8;

@@ -152,6 +152,7 @@ public class AnalogActivity extends Activity implements View.OnClickListener {
         analog_et_flow_original=(TextView)findViewById(R.id.analog_et_flow_original);
         analog_et_concentration_original=(TextView)findViewById(R.id.analog_et_concentration_original);
         analog_et_temp_original=(TextView)findViewById(R.id.analog_et_temp_original);
+
         analog_et_oxy_current=(TextView)findViewById(R.id.analog_et_oxy_current);
         analog_et_flow_current=(TextView)findViewById(R.id.analog_et_flow_current);
         analog_et_concentration_current=(TextView)findViewById(R.id.analog_et_concentration_current);

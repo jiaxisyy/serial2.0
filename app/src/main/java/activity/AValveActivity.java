@@ -217,15 +217,11 @@ public class AValveActivity extends Activity implements View.OnClickListener, Vi
                     }else if(y13[0]==1){
                         bundle.putBoolean("y13", true);
                     }
-
                     Message msg = new Message();
                     msg.setData(bundle);
                     msg.what = 1;
                     handler.sendMessage(msg);
                 }
-//                Message msg = new Message();
-//                msg.what = 1;
-//                handler.sendMessage(msg);
             }
         }).start();
     }
