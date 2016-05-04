@@ -1,0 +1,165 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:2:1-68:12
+	package
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:3:5-31
+		INJECTED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml
+	android:versionName
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:5:5-30
+		INJECTED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml
+	android:versionCode
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:4:5-28
+		INJECTED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:7:5-9:41
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:5:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:support-v4:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:20:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:9:9-38
+		INJECTED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:8:9-35
+		INJECTED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml
+		INJECTED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml
+application
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:11:5-66:19
+MERGED from [com.android.support:appcompat-v7:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.3.0\AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:animated-vector-drawable:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-vector-drawable:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\23.3.0\AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:23.3.0] D:\ANDROID1\serial2.0\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.3.0\AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:15:9-41
+	android:allowBackup
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:13:9-35
+	android:icon
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:14:9-45
+	android:theme
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:16:9-40
+	android:name
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:12:9-46
+activity#activity.MainActivity
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:17:9-28:20
+	android:screenOrientation
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:20:13-50
+	android:label
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:19:13-45
+	android:configChanges
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:21:13-63
+	android:name
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:18:13-49
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:23:13-27:29
+action#android.intent.action.MAIN
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:24:17-69
+	android:name
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:24:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:26:17-77
+	android:name
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:26:27-74
+activity#activity.AlarmActivity
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:29:12-32:16
+	android:screenOrientation
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:30:28-65
+	android:configChanges
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:31:13-63
+	android:name
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:29:22-59
+activity#activity.MonitorActivity
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:33:9-35:65
+	android:screenOrientation
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:34:29-66
+	android:configChanges
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:35:13-63
+	android:name
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:33:19-58
+activity#activity.AMachineStatusActivity
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:36:9-38:65
+	android:screenOrientation
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:37:28-65
+	android:configChanges
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:38:13-63
+	android:name
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:36:19-65
+activity#activity.AnalogActivity
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:39:9-41:65
+	android:screenOrientation
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:40:29-66
+	android:configChanges
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:41:13-63
+	android:name
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:39:19-57
+activity#activity.ATimingActivity
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:42:9-44:65
+	android:screenOrientation
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:43:28-65
+	android:configChanges
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:44:13-63
+	android:name
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:42:19-58
+activity#activity.AValveActivity
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:45:9-47:66
+	android:screenOrientation
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:46:15-52
+	android:configChanges
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:47:13-63
+	android:name
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:45:19-57
+activity#activity.FlowActivity
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:48:9-50:65
+	android:screenOrientation
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:49:17-54
+	android:configChanges
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:50:13-63
+	android:name
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:48:19-55
+activity#activity.ParameterActivity
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:51:9-53:65
+	android:screenOrientation
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:52:17-54
+	android:configChanges
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:53:13-63
+	android:name
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:51:19-60
+activity#activity.PressureActivity
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:54:9-56:65
+	android:screenOrientation
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:55:16-53
+	android:configChanges
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:56:13-63
+	android:name
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:54:19-59
+activity#activity.RunActivity
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:57:9-59:65
+	android:screenOrientation
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:58:16-53
+	android:configChanges
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:59:13-63
+	android:name
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:57:19-54
+activity#activity.TestActivity
+ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:60:9-62:65
+	android:screenOrientation
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:61:16-53
+	android:configChanges
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:62:13-63
+	android:name
+		ADDED from D:\ANDROID1\serial2.0\app\src\main\AndroidManifest.xml:60:19-55
