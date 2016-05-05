@@ -37,7 +37,7 @@ import utils.PopUtils;
  */
 public class ParameterActivity extends Activity implements View.OnClickListener, OnTouchListener{
 
-    private TextView para_et_opendelay, para_et_startdelay;
+    private TextView para_et_opendelay, para_et_startdelay,momitor_tv_runningtime;
     private Button para_btn_original,para_btn_setting,para_btn_factory;
     private Handler handler = new Handler() {
         @Override
@@ -52,7 +52,10 @@ public class ParameterActivity extends Activity implements View.OnClickListener,
                     if(String.valueOf(msg.getData().getShort("d478"))!=null && !String.valueOf(msg.getData().getShort("d478")).equals("")){
                         para_et_startdelay.setText(String.valueOf(msg.getData().getShort("d478")));
                     }
+                    if(msg.getData().getIntArray("ints").length>0){
+                        momitor_tv_runningtime.setText( msg.getData().getIntArray("ints")[0]+"");
 
+                    }
                     break;
             }
         }
@@ -74,6 +77,10 @@ public class ParameterActivity extends Activity implements View.OnClickListener,
      * 控件初始化
      */
     public void initView() {
+
+        //A机运行时间
+        momitor_tv_runningtime = (TextView) findViewById(R.id.momitor_tv_runningtime);
+
         para_btn_back = (Button) findViewById(R.id.para_btn_back);
         para_btn_original = (Button) findViewById(R.id.para_btn_original);
         para_btn_factory = (Button) findViewById(R.id.para_btn_factory);
@@ -123,20 +130,19 @@ public class ParameterActivity extends Activity implements View.OnClickListener,
 
                 while(true){
                     try {
-
-
                         /**这里写数据获取与数据处理函数*/
-
+                        //A机运行时间
+                        int[] ints = MyApplication.getInstance().mdbusreaddword(Constants.Define.OP_DWORD_D, 458, 1);
                         short[]d476 = MyApplication.getInstance().mdbusreadword(Constants.Define.OP_WORD_D, 476, 1);
                         short[]d478 = MyApplication.getInstance().mdbusreadword(Constants.Define.OP_WORD_D, 478, 1);
                         Bundle bundle = new Bundle();
+                        bundle.putIntArray("ints", ints);
                         bundle.putShort("d476", d476[0]);
                         bundle.putShort("d478", d478[0]);
                         Message msg = new Message();
                         msg.what = 1;
                         msg.setData(bundle);
                         handler.sendMessage(msg);
-
                         Thread.sleep(2000);
                     } catch (InterruptedException e) {
                         // TODO Auto-generated catch block

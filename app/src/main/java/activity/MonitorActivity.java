@@ -52,11 +52,6 @@ public class MonitorActivity extends Activity implements View.OnClickListener, V
 
                         momitor_tv_concentration.setText( msg.getData().getString("l1").toString());
                     }
-                    if(msg.getData().getIntArray("ints").length>0){
-                        momitor_tv_runningtime.setText( msg.getData().getIntArray("ints")[0]+"");
-
-                    }
-
 
                     momitor_btn_machine_a.setSelected(msg.getData().getBoolean("m11"));
                     break;
@@ -71,7 +66,7 @@ public class MonitorActivity extends Activity implements View.OnClickListener, V
 
     //循环标志
     private boolean flag = true;
-    private TextView momitor_tv_pressure, momitor_tv_totalflow, momitor_tv_flow, momitor_tv_concentration, momitor_tv_runningtime;
+    private TextView momitor_tv_pressure, momitor_tv_totalflow, momitor_tv_flow, momitor_tv_concentration;
     private Button momitor_btn_machine_a,momitor_btn_start,momitor_btn_stop;
     private Button monitor_btn_back;
 
@@ -100,8 +95,7 @@ public class MonitorActivity extends Activity implements View.OnClickListener, V
         momitor_tv_flow = (TextView) findViewById(R.id.momitor_tv_flow);
 // 氧气浓度
         momitor_tv_concentration = (TextView) findViewById(R.id.momitor_tv_concentration);
-        //A机运行时间
-        momitor_tv_runningtime = (TextView) findViewById(R.id.momitor_tv_runningtime);
+
 
         momitor_btn_machine_a = (Button) findViewById(R.id.momitor_btn_machine_a);
         momitor_btn_start= (Button) findViewById(R.id.momitor_btn_start);
@@ -148,15 +142,14 @@ public class MonitorActivity extends Activity implements View.OnClickListener, V
 
                         //流量统计
                         float[] j = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 264, 1);
-                        float j1 = (float) (Math.round(j[0] * 10000)) / 10000;
+                        float j1 = (float) (Math.round(j[0] * 100)) / 100;
                         //氧气流量
                         float[] k = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 228, 1);
-                        float k1 = (float) (Math.round(k[0] * 100)) / 100;
+                        float k1 = (float) (Math.round(k[0] * 10000)) / 10000;
                         //氧气浓度
                         float[] l = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 244, 1);
                         float l1 = (float) (Math.round(l[0] * 100)) / 100;
-                        //A机运行时间
-                        int[] ints = MyApplication.getInstance().mdbusreaddword(Constants.Define.OP_DWORD_D, 458, 1);
+
                         //A机运行状态
                         byte[]m11 =  MyApplication.getInstance().mdbusreadbyte(Constants.Define.OP_BIT_M,11,1);
 
@@ -167,7 +160,7 @@ public class MonitorActivity extends Activity implements View.OnClickListener, V
                         bundle.putString("j1", String.valueOf(j1));
                         bundle.putString("k1", String.valueOf(k1));
                         bundle.putString("l1", String.valueOf(l1));
-                        bundle.putIntArray("ints", ints);
+
                         if(m11[0] == 1){
                             bundle.putBoolean("m11",true);
                         }else{

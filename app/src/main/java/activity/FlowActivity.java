@@ -44,8 +44,8 @@ public class FlowActivity extends Activity implements View.OnClickListener, View
             switch (msg.what){
                 case 1:
                     /**这里写UI更新函数*/
-                    if(String.valueOf(msg.getData().getInt("d264"))!=null && !String.valueOf(msg.getData().getInt("d264")).equals("")){
-                        flow_tv_totalflow.setText(msg.getData().getInt("d264")+"");
+                    if(String.valueOf(msg.getData().getFloat("d264"))!=null && !String.valueOf(msg.getData().getFloat("d264")).equals("")){
+                        flow_tv_totalflow.setText(String.valueOf((float) Math.round( msg.getData().getFloat("d264")* 10000) / 10000));
                     }
                     if(String.valueOf(msg.getData().getInt("d272"))!=null && !String.valueOf(msg.getData().getInt("d272")).equals("")){
                         flow_et_totalflow_correct.setText(String.valueOf(msg.getData().getInt("d272")));
@@ -112,11 +112,11 @@ public class FlowActivity extends Activity implements View.OnClickListener, View
                 /**这里写数据获取与数据处理函数*/
                 while (flag) {
                     try {
-                        int[] d264 = MyApplication.getInstance().mdbusreaddword(Constants.Define.OP_DWORD_D, 264, 1);
+                        float[] d264 = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 264, 1);
                         int[] d272 = MyApplication.getInstance().mdbusreaddword(Constants.Define.OP_DWORD_D, 272, 1);
                         Bundle bundle = new Bundle();
                         Message msg = new Message();
-                        bundle.putInt("d264", d264[0]);
+                        bundle.putFloat("d264", d264[0]);
                         bundle.putInt("d272", d272[0]);
                         msg.setData(bundle);
                         msg.what = 1;

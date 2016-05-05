@@ -58,21 +58,21 @@ public class AnalogActivity extends Activity implements View.OnClickListener {
                         analog_et_temp_original.setText(String.valueOf(msg.getData().getShortArray("d16")[0]));
 
                     }
-                    if(String.valueOf(msg.getData().getShortArray("d212")[0])!=null && !String.valueOf(msg.getData().getShortArray("d212")[0]).equals("")){
+                    if(String.valueOf(msg.getData().getFloatArray("d212")[0])!=null && !String.valueOf(msg.getData().getFloatArray("d212")[0]).equals("")){
 
-                        analog_et_oxy_current.setText(String.valueOf(msg.getData().getShortArray("d212")[0]));
+                        analog_et_oxy_current.setText(String.valueOf(msg.getData().getFloatArray("d212")[0]));
                     }
-                    if(String.valueOf(msg.getData().getShortArray("d228")[0])!=null && !String.valueOf(msg.getData().getShortArray("d228")[0]).equals("")){
-                        analog_et_flow_current.setText(String.valueOf(msg.getData().getShortArray("d228")[0]));
+                    if(String.valueOf(msg.getData().getFloatArray("d228")[0])!=null && !String.valueOf(msg.getData().getFloatArray("d228")[0]).equals("")){
+                        analog_et_flow_current.setText(String.valueOf(msg.getData().getFloatArray("d228")[0]));
 
                     }
-                    if(String.valueOf(msg.getData().getShortArray("d244")[0])!=null && !String.valueOf(msg.getData().getShortArray("d244")[0]).equals("")){
+                    if(String.valueOf(msg.getData().getFloatArray("d244")[0])!=null && !String.valueOf(msg.getData().getFloatArray("d244")[0]).equals("")){
 
-                        analog_et_concentration_current.setText(String.valueOf(msg.getData().getShortArray("d244")[0]));
+                        analog_et_concentration_current.setText(String.valueOf(msg.getData().getFloatArray("d244")[0]));
                     }
-                    if(String.valueOf(msg.getData().getShortArray("d260")[0])!=null && !String.valueOf(msg.getData().getShortArray("d260")[0]).equals("")){
+                    if(String.valueOf(msg.getData().getFloatArray("d260")[0])!=null && !String.valueOf(msg.getData().getFloatArray("d260")[0]).equals("")){
 
-                        analog_et_temp_current.setText(String.valueOf(msg.getData().getShortArray("d260")[0]));
+                        analog_et_temp_current.setText(String.valueOf(msg.getData().getFloatArray("d260")[0]));
 
                     }
                     break;
@@ -85,9 +85,9 @@ public class AnalogActivity extends Activity implements View.OnClickListener {
                         analog_et_oxy_min.setText(String.valueOf((float)(Math.round(msg.getData().getFloatArray("d204")[0])*100)/100));
 
                     }
-                    if(String.valueOf(msg.getData().getShortArray("d208")[0])!=null && !String.valueOf(msg.getData().getShortArray("d208")[0]).equals("")){
+                    if(String.valueOf(msg.getData().getFloatArray("d208")[0])!=null && !String.valueOf(msg.getData().getFloatArray("d208")[0]).equals("")){
 
-                        analog_et_oxy_correction.setText(String.valueOf(msg.getData().getShortArray("d208")[0]));
+                        analog_et_oxy_correction.setText(String.valueOf(msg.getData().getFloatArray("d208")[0]));
                     }
                     if(String.valueOf(msg.getData().getFloatArray("d216")[0])!=null && !String.valueOf(msg.getData().getFloatArray("d216")[0]).equals("")){
                         analog_et_flow_max.setText(String.valueOf((float)(Math.round(msg.getData().getFloatArray("d216")[0])*100)/100));
@@ -97,8 +97,8 @@ public class AnalogActivity extends Activity implements View.OnClickListener {
 
                         analog_et_flow_min.setText(String.valueOf((float)(Math.round(msg.getData().getFloatArray("d220")[0])*100)/100));
                     }
-                    if(String.valueOf(msg.getData().getShortArray("d224")[0])!=null && !String.valueOf(msg.getData().getShortArray("d224")[0]).equals("")){
-                        analog_et_flow_correction.setText(String.valueOf(msg.getData().getShortArray("d224")[0]));
+                    if(String.valueOf(msg.getData().getFloatArray("d224")[0])!=null && !String.valueOf(msg.getData().getFloatArray("d224")[0]).equals("")){
+                        analog_et_flow_correction.setText(String.valueOf(msg.getData().getFloatArray("d224")[0]));
 
                     }
                     if(String.valueOf(msg.getData().getFloatArray("d232")[0])!=null && !String.valueOf(msg.getData().getFloatArray("d232")[0]).equals("")){
@@ -109,9 +109,9 @@ public class AnalogActivity extends Activity implements View.OnClickListener {
 
                         analog_et_concentration_min.setText(String.valueOf((float)(Math.round(msg.getData().getFloatArray("d236")[0])*100)/100));
                     }
-                    if(String.valueOf(msg.getData().getShortArray("d240")[0])!=null && !String.valueOf(msg.getData().getShortArray("d240")[0]).equals("")){
+                    if(String.valueOf(msg.getData().getFloatArray("d240")[0])!=null && !String.valueOf(msg.getData().getFloatArray("d240")[0]).equals("")){
 
-                        analog_et_concentration_correction.setText(String.valueOf(msg.getData().getShortArray("d240")[0]));
+                        analog_et_concentration_correction.setText(String.valueOf(msg.getData().getFloatArray("d240")[0]));
                     }
                     if(String.valueOf(msg.getData().getFloatArray("d248")[0])!=null && !String.valueOf(msg.getData().getFloatArray("d248")[0]).equals("")){
                         analog_et_temp_max.setText(String.valueOf((float)(Math.round(msg.getData().getFloatArray("d248")[0])*100)/100));
@@ -121,9 +121,9 @@ public class AnalogActivity extends Activity implements View.OnClickListener {
                         analog_et_temp_min.setText(String.valueOf((float)(Math.round(msg.getData().getFloatArray("d252")[0])*100)/100));
 
                     }
-                    if(String.valueOf(msg.getData().getShortArray("d256")[0])!=null && !String.valueOf(msg.getData().getShortArray("d256")[0]).equals("")){
+                    if(String.valueOf(msg.getData().getFloatArray("d256")[0])!=null && !String.valueOf(msg.getData().getFloatArray("d256")[0]).equals("")){
 
-                        analog_et_temp_correction.setText(String.valueOf(msg.getData().getShortArray("d256")[0]));
+                        analog_et_temp_correction.setText(String.valueOf(msg.getData().getFloatArray("d256")[0]));
                     }
                     break;
             }
@@ -213,43 +213,43 @@ public class AnalogActivity extends Activity implements View.OnClickListener {
                         //氧气压力最小值
                         float[]d204 = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 204, 1);
                         //氧气压力修正值
-                        short[]d208 = MyApplication.getInstance().mdbusreadword(Constants.Define.OP_WORD_D, 208, 1);
+                        float[]d208 = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 208, 1);
 
                         //氧气流量最大值
                         float[] d216 = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 216, 1);
                         //氧气流量最小值
                         float[] d220 = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 220, 1);
                         //氧气流量修正值
-                        short[] d224 = MyApplication.getInstance().mdbusreadword(Constants.Define.OP_WORD_D, 224, 1);
+                        float[] d224 = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 224, 1);
 
                         //氧气浓度最大值
                         float[] d232 = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 232, 1);
                         //氧气浓度最小值
                         float[] d236 = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 236, 1);
                         //氧气浓度修正值
-                        short[] d240 = MyApplication.getInstance().mdbusreadword(Constants.Define.OP_WORD_D, 240, 1);
+                        float[] d240 = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 240, 1);
 
                         //氧气温度最大值
                         float[] d248 = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 248, 1);
                         //氧气温度最小值
                         float[] d252 = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 252, 1);
                         //氧气温度修正值
-                        short[] d256 = MyApplication.getInstance().mdbusreadword(Constants.Define.OP_WORD_D, 256, 1);
+                        float[] d256 = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 256, 1);
                         Bundle bundle = new Bundle();
 
 
                         bundle.putFloatArray("d200", d200);
                         bundle.putFloatArray("d204", d204);
-                        bundle.putShortArray("d208", d208);
+                        bundle.putFloatArray("d208", d208);
                         bundle.putFloatArray("d216", d216);
                         bundle.putFloatArray("d220", d220);
-                        bundle.putShortArray("d224", d224);
+                        bundle.putFloatArray("d224", d224);
                         bundle.putFloatArray("d232", d232);
                         bundle.putFloatArray("d236", d236);
-                        bundle.putShortArray("d240", d240);
+                        bundle.putFloatArray("d240", d240);
                         bundle.putFloatArray("d248", d248);
                         bundle.putFloatArray("d252", d252);
-                        bundle.putShortArray("d256", d256);
+                        bundle.putFloatArray("d256", d256);
                         Message msg = new Message();
                         msg.setData(bundle);
                         msg.what = 2;
@@ -291,29 +291,29 @@ public class AnalogActivity extends Activity implements View.OnClickListener {
                     short[] d16 = MyApplication.getInstance().mdbusreadword(Constants.Define.OP_WORD_D, 16, 1);
 
                     //氧气压力当前值
-                    short[] d212 = MyApplication.getInstance().mdbusreadword(Constants.Define.OP_WORD_D, 212, 1);
+                    float[] d212 = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 212, 1);
 
                     //氧气流量当前值
-                    short[] d228 = MyApplication.getInstance().mdbusreadword(Constants.Define.OP_WORD_D, 228, 1);
+                    float[] d228 = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 228, 1);
 
                     //氧气浓度当前值
-                    short[] d244 = MyApplication.getInstance().mdbusreadword(Constants.Define.OP_WORD_D, 244, 1);
+                    float[] d244 = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 244, 1);
 
                     //氧气温度当前值
-                    short[] d260 = MyApplication.getInstance().mdbusreadword(Constants.Define.OP_WORD_D, 260, 1);
+                    float[] d260 = MyApplication.getInstance().mdbusreadreal(Constants.Define.OP_REAL_D, 260, 1);
                     Bundle bundle = new Bundle();
                     bundle.putShortArray("d10", d10);
                     bundle.putShortArray("d12", d12);
                     bundle.putShortArray("d14", d14);
                     bundle.putShortArray("d16", d16);
 
-                    bundle.putShortArray("d212", d212);
+                    bundle.putFloatArray("d212", d212);
 
-                    bundle.putShortArray("d228", d228);
+                    bundle.putFloatArray("d228", d228);
 
-                    bundle.putShortArray("d244", d244);
+                    bundle.putFloatArray("d244", d244);
 
-                    bundle.putShortArray("d260", d260);
+                    bundle.putFloatArray("d260", d260);
                     Message msg = new Message();
                     msg.setData(bundle);
                     msg.what = 1;
@@ -334,40 +334,40 @@ public class AnalogActivity extends Activity implements View.OnClickListener {
                 finish();
                 break;
             case R.id.analog_et_oxy_max:
-                showPopWindow(analog_et_oxy_max,Constants.Define.OP_DWORD_D,200);
+                showPopWindow(analog_et_oxy_max,Constants.Define.OP_REAL_D,200);
                 break;
             case R.id.analog_et_flow_max:
-                showPopWindow(analog_et_flow_max,Constants.Define.OP_DWORD_D,216);
+                showPopWindow(analog_et_flow_max,Constants.Define.OP_REAL_D,216);
                 break;
             case R.id.analog_et_concentration_max:
-                showPopWindow(analog_et_concentration_max,Constants.Define.OP_DWORD_D,232);
+                showPopWindow(analog_et_concentration_max,Constants.Define.OP_REAL_D,232);
                 break;
             case R.id.analog_et_temp_max:
-                showPopWindow(analog_et_temp_max,Constants.Define.OP_DWORD_D,248);
+                showPopWindow(analog_et_temp_max,Constants.Define.OP_REAL_D,248);
                 break;
             case R.id.analog_et_oxy_min:
-                showPopWindow(analog_et_oxy_min,Constants.Define.OP_DWORD_D,204);
+                showPopWindow(analog_et_oxy_min,Constants.Define.OP_REAL_D,204);
                 break;
             case R.id.analog_et_flow_min:
-                showPopWindow(analog_et_flow_min,Constants.Define.OP_DWORD_D,220);
+                showPopWindow(analog_et_flow_min,Constants.Define.OP_REAL_D,220);
                 break;
             case R.id.analog_et_concentration_min:
-                showPopWindow(analog_et_concentration_min,Constants.Define.OP_DWORD_D,236);
+                showPopWindow(analog_et_concentration_min,Constants.Define.OP_REAL_D,236);
                 break;
             case R.id.analog_et_temp_min:
-                showPopWindow(analog_et_temp_min,Constants.Define.OP_DWORD_D,252);
+                showPopWindow(analog_et_temp_min,Constants.Define.OP_REAL_D,252);
                 break;
             case R.id. analog_et_oxy_correction:
-                showPopWindow(analog_et_oxy_correction,Constants.Define.OP_DWORD_D,208);
+                showPopWindow(analog_et_oxy_correction,Constants.Define.OP_REAL_D,208);
                 break;
             case R.id.analog_et_flow_correction:
-                showPopWindow(analog_et_flow_correction,Constants.Define.OP_DWORD_D,224);
+                showPopWindow(analog_et_flow_correction,Constants.Define.OP_REAL_D,224);
                 break;
             case R.id.analog_et_concentration_correction:
-                showPopWindow(analog_et_concentration_correction,Constants.Define.OP_DWORD_D,240);
+                showPopWindow(analog_et_concentration_correction,Constants.Define.OP_REAL_D,240);
                 break;
             case R.id.analog_et_temp_correction:
-                showPopWindow(analog_et_temp_correction,Constants.Define.OP_DWORD_D,256);
+                showPopWindow(analog_et_temp_correction,Constants.Define.OP_REAL_D,256);
                 break;
         }
     }
@@ -406,9 +406,9 @@ public class AnalogActivity extends Activity implements View.OnClickListener {
             public void onClick(View v) {
                 String s = TextView.getText().toString();
                 if(s!=null&&!s.equals("")){
-                    int i = Integer.parseInt(s);
-                    int[] i1 = {i};
-                    MyApplication.getInstance().mdbuswritedword(type, i1, stadr, 1);
+                    float i = Float.parseFloat(s) ;
+                    float[] i1 = {i};
+                    MyApplication.getInstance().mdbuswritereal(type, i1, stadr, 1);
 //                 getData();
                 }
                 pw.dismiss();
