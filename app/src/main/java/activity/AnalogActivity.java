@@ -11,6 +11,8 @@ import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+import android.renderscript.ScriptGroup;
+import android.text.InputType;
 import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -392,6 +394,7 @@ public class AnalogActivity extends Activity implements View.OnClickListener {
         });
         PopUtils.setBackgroundAlpha(0.3f, AnalogActivity.this);//设置popw出现时背景透明度
         final EditText TextView= (EditText) view.findViewById(R.id.editText);
+        TextView.setInputType(InputType.TYPE_CLASS_PHONE);
         TextView cancel= (TextView) view.findViewById(R.id.cancel);
         TextView sure= (TextView) view.findViewById(R.id.sure);
 

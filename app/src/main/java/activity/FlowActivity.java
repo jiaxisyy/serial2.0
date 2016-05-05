@@ -43,7 +43,7 @@ public class FlowActivity extends Activity implements View.OnClickListener, View
             super.handleMessage(msg);
             switch (msg.what){
                 case 1:
-                    /**这里写UI更新函数*/
+                        /**这里写UI更新函数*/
                     if(String.valueOf(msg.getData().getFloat("d264"))!=null && !String.valueOf(msg.getData().getFloat("d264")).equals("")){
                         flow_tv_totalflow.setText(String.valueOf((float) Math.round( msg.getData().getFloat("d264")* 10000) / 10000));
                     }
